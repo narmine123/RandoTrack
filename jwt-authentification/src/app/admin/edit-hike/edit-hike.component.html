@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Modifier une Randonnée</h2>
+
+
+    <form (ngSubmit)="onSubmit()">
+    <label for="name">Nom:</label>
+    <input id="name" [(ngModel)]="hike.name" name="name"class="form-control" required>
+  
+    <label for="description">Description:</label>
+    <textarea id="description" [(ngModel)]="hike.description" name="description" class="form-control"required></textarea>
+  
+    <label for="location">Location:</label>
+    <input id="location" [(ngModel)]="hike.location" name="location"class="form-control" required>
+  
+    <label for="difficulty">Difficulty:</label>
+    <input id="difficulty" [(ngModel)]="hike.difficulty" name="difficulty"class="form-control" required>
+  
+    <label for="length">Length:</label>
+    <input id="length" [(ngModel)]="hike.length" name="length" class="form-control" required>
+  
+    <button type="submit"class="btn btn-primary" (click)="  onSubmit()">Modifier Randonnée</button>
+  </form>
+ </div> 

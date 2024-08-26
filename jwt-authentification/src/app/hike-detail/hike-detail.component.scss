@@ -1,0 +1,53 @@
+.hike-detail-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  img {
+    width: 450px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Conserve les proportions de l'image */
+    object-fit: cover; /* Assure que l'image couvre l'espace sans déformation */
+    border-radius: 8px; /* Facultatif : pour arrondir les coins des images */
+    transition: transform 0.3s ease; /* Ajoute une transition pour l'effet de mouvement */
+  }
+  
+  
+  .hike-details {
+    text-align: center;
+    margin-bottom: 50px; /* Assurez-vous que le bouton a de l'espace */
+  }
+  
+  .participate-button {
+    position: absolute;
+    bottom: -140px; /* Ajustez la distance du bas */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .participate-button:hover {
+    background-color: #b38300;
+  }
+  
+  h1{
+    color: #ff9100;
+  }
+
+
+  .detail-title {
+    color: #ffbb00; /* Couleur bleue pour les titres */
+    font-weight: bold; /* Texte en gras */
+  }
+  

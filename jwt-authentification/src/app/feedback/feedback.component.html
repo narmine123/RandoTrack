@@ -1,0 +1,11 @@
+<h2 class="feedback">Laissez votre feedback pour la randonnée</h2>
+<div class="container">
+  <form (ngSubmit)="onSubmitComment()">
+    <label for="feedback">Votre Feedback :</label>
+    <textarea id="feedback" name="feedback" class="text" rows="5" cols="40" [(ngModel)]="comment" placeholder="Entrez votre feedback ici..."></textarea>
+
+    <button class="btn btn-primary" type="submit">Envoyer</button>
+  </form>
+   <!-- Affichage du message de confirmation ou d'erreur -->
+   <p *ngIf="feedbackMessage">{{ feedbackMessage }}</p>
+</div>

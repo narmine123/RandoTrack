@@ -1,0 +1,62 @@
+/* Styles pour centrer le contenu */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Hauteur pour centrer verticalement */
+    background-color: #f0f8ff; /* Couleur de fond légère */
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  /* Styles pour le titre */
+  .home-container h1 {
+    font-size: 3rem;
+    color: #2c3e50; /* Couleur du texte */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Effet d'ombre légère */
+  }
+  
+  /* Styles pour l'image */
+  .home-image {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre portée pour profondeur */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Transition pour effet au survol */
+  }
+  
+  /* Effet de survol de l'image */
+  .home-image:hover {
+    transform: scale(1.05); /* Agrandissement léger au survol */
+  }
+  
+  /* Styles pour le paragraphe */
+  .home-container p {
+    font-size: 1.2rem;
+    color: #34495e;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-top: 0;
+  }
+  
+  /* Responsive design pour petits écrans */
+  @media (max-width: 768px) {
+    .home-container h1 {
+      font-size: 2.5rem;
+    }
+  
+    .home-image {
+      width: 80%;
+    }
+  
+    .home-container p {
+      font-size: 1rem;
+    }
+  }
+  

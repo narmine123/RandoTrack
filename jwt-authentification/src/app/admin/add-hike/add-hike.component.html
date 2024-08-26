@@ -1,0 +1,61 @@
+<div class="container">
+    <h2>Ajouter une Randonnée</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Nom:</label>
+        <input id="name" class="form-control" [(ngModel)]="hike.name" name="name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" class="form-control" [(ngModel)]="hike.description" name="description" required></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="location">Lieu:</label>
+        <input id="location" class="form-control" [(ngModel)]="hike.location" name="location" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="difficulty">Difficulté:</label>
+        <select id="difficulty" class="form-control" [(ngModel)]="hike.difficulty" name="difficulty" required>
+          <option value="Facile">Facile</option>
+          <option value="Moyen">Moyen</option>
+          <option value="Difficile">Difficile</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="length">Longueur (km):</label>
+        <input id="length" type="number" class="form-control" [(ngModel)]="hike.length" name="length" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="startDate">Date de début:</label>
+        <input id="startDate" type="date" class="form-control" [(ngModel)]="hike.startDate" name="startDate" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="endDate">Date de fin:</label>
+        <input id="endDate" type="date" class="form-control" [(ngModel)]="hike.endDate" name="endDate" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="maxParticipants">Nombre maximum de participants:</label>
+        <input id="maxParticipants" type="number" class="form-control" [(ngModel)]="hike.maxParticipants" name="maxParticipants" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="gpsTrack">GPS Track:</label>
+        <input id="gpsTrack" class="form-control" [(ngModel)]="hike.gpsTrack" name="gpsTrack" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="budget">Budget:</label>
+        <input id="budget" type="number" class="form-control" [(ngModel)]="hike.budget" name="budget" required>
+      </div>
+  
+      <button type="submit" class="btn btn-primary" (click)="  onSubmit()">Ajouter Randonnée</button>
+    </form>
+  </div>
+  

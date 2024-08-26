@@ -1,0 +1,32 @@
+<div *ngIf="hike" class="hike-detail-container">
+  <h1>Randonnée </h1>
+
+  <div class="image-container">
+    <img [src]="hike.image" alt="Hiking Photo" >
+  </div>
+  <div class="hike-details">
+
+  <p> <strong>{{ hike.name}}</strong>    </p>
+  <p><strong class="detail-title">Description:</strong> {{ hike.description }}</p>
+  <p><strong class="detail-title">Location:</strong>{{ hike.Location }}</p>
+  <p><strong class="detail-title">Difficulty</strong> {{ hike.Difficulty }}</p>
+  <p><strong class="detail-title">Length:</strong> {{ hike.Length }} </p>
+  <p><strong class="detail-title">Participants:</strong> {{ hike.participants }}</p>
+  <p><strong class="detail-title">NombreMaxParticipants:</strong> {{ hike.maxParticipant }}</p>
+  <p><strong class="detail-title">Budget:</strong> {{ hike.budget }} TND</p>
+  <p><strong class="detail-title">Date de début:</strong> {{ hike.startDate | date }}</p>
+  <p><strong class="detail-title">Date de fin:</strong> {{ hike.endDate | date }}</p>
+  <p><strong class="detail-title">Trace GPS:</strong> <a href="{{ hike.gpsTrack }}" target="_blank">Voir la trace</a></p>
+
+
+</div>
+
+
+  <button  (click)="participate(hike.id)" class="participate-button" mat-raised-button color="primary" >Je participe</button>
+
+  <div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+  </div>
+  <!-- Le reste de votre template -->
+  
+</div>
